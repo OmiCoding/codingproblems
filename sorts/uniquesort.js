@@ -11,7 +11,6 @@
 
 const uniqSort = function (arr) {
   const breadcrumbs = {}; // SC: O(n)
-
   return arr
     .sort((a, b) => a - b) // TC: O(nlogn)
     .filter((e) => {
@@ -24,4 +23,4 @@ const uniqSort = function (arr) {
     });
 };
 
-console.log(uniqSort([1, 5, 2, 1])); // => [2,3,4]
+uniqSort([1, 5, 2, 1]); // => [2,3,4]
