@@ -24,5 +24,3 @@ function memoize(cb) {
 let memoizeFactorial = memoize(factorial);
 let memoizedVal = memoizeFactorial(10);
 let memoizedVal2 = memoizeFactorial(2);
-console.log("Factorial 10 :", memoizedVal);
-console.log("Cached factorial 10!", memoizedVal2);
